@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.Borders{
+    
+    width: 1000px;
+}
+
+.Links{
+    display: flex;
+    list-style: none;
+    
+    
+    
+}
+
+.Navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.Links li ul{
+    display: none;
+    position: absolute;
+    list-style: none;
+    top:100%;
+    left: 0%;
+    padding: 0;
+    
+}
+.Links li ul li{
+    width: 200%;
+    right: 60%;
+}
+
+.Links li{
+    text-align: center;
+    vertical-align: middle;
+    position: relative;   
+    width: 90px;
+    padding: 10px;
+    
+}
+
+.Links a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+}
+
+.Links :hover > ul{
+    display: block;
+}
+
+.logonav{
+    max-width: 50%;
+    max-height: 50%;
+}
