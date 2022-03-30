@@ -1,0 +1,14 @@
+article{
+    display: flex;
+    justify-content: center;
+    max-width: 65%;
+    min-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    z-index: 2;
+}
+
+.border{
+    align-content: center;
+}
