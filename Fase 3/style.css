@@ -5,6 +5,7 @@
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -13,11 +14,17 @@ body{
     width: 1000px;
 }
 
+header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
 .Links{
     display: flex;
     list-style: none;
-    
-    
+    animation-name: slideBar;
     
 }
 
@@ -25,7 +32,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    animation-name: slideBar;
+    width: 70%;
+    z-index: 8;
 }
 
 .Links li ul{
@@ -35,11 +44,12 @@ body{
     top:100%;
     left: 0%;
     padding: 0;
-    
+    animation-name: slideBar;
 }
 .Links li ul li{
     width: 200%;
-    right: 60%;
+    right: 58%;
+    animation-name: slideBar;
 }
 
 .Links li{
@@ -47,8 +57,8 @@ body{
     vertical-align: middle;
     position: relative;   
     width: 90px;
-    padding: 10px;
-    
+    padding: 0px 50px 0px 10px;
+    background-color: white;
 }
 
 .Links a {
@@ -58,11 +68,51 @@ body{
     color: rgb(94, 94, 94);
 }
 
+.fondobar{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 0px;
+    z-index: 4;
+}
+
 .Links :hover > ul{
     display: block;
+    
+}
+
+.Links li ul li{
+    padding: 10px;
 }
 
 .logonav{
-    max-width: 50%;
+    margin-top: 5px;
+    max-width: 22%;
     max-height: 50%;
+}
+
+.slide{
+    animation-name: slideBar;
+    animation-duration: 0.3s;
+}
+
+.fondo{
+    position: absolute;
+    background: linear-gradient(180deg, rgba(146,187,244,1) 0%, rgba(210,231,244,1) 7%, rgba(210,231,244,1) 53%, rgba(255,255,255,0) 85%);
+    width: 100%;
+    height: 500px;
+    top: 47px;
+    background-size: 100%;
+    z-index: 1;
+}
+
+@keyframes slideBar{
+    from{
+        top: 50%;
+        opacity: 0%;
+    }
+    to{
+        top:100%;
+        opacity: 100%;
+    }
 }
