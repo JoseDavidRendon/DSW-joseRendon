@@ -193,24 +193,32 @@ footer p{
 
 aside{
     position: fixed;
-    width: 400px;
+    width: 420px;
     height: 100vh;
     border: 4px solid #dddddd;
     z-index: 50;
-    right: -375px;
+    right: -395px;
     animation-duration: 0.5s;
+    overflow:scroll;
+    background-color: white;
 }
+
+
 
 .cont_aside{
     background-color: #ffffff;
     width: 100%;
     height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #aside_bar:hover{
     right: -1px;
     animation-name: slideAside; 
 }
+
 
 @keyframes slideAside{
     from{
@@ -223,21 +231,24 @@ aside{
 
 aside iframe{
     padding-top: 6%;
-    padding-left: 30px;
-    width:100%;
-    height: 100%;
+    padding-left: 40px;
+    width:360px;
+    height: 500px;
+    padding-bottom: 0px;
+}
+aside::-webkit-scrollbar{
+    overflow: hidden;
 }
 
 
 .icon_abrir{
-    position: relative;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border: 4px solid rgb(212, 212, 212);
-    border-radius: 100px;
+    position: fixed;
+    width: 3%;
+    height: 3%;
     top: 50%;
-    right: 30px;
+    right: 35px;
+    z-index: 12;
+    opacity: 50%;
 }
 .icon_abrir img{
     width: 50%;
@@ -247,6 +258,14 @@ aside iframe{
 
 .cont_aside h1{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 60px;
+    font-weight: bold;
+}
+.cont_aside p{
+    text-align: center;
+    padding-bottom: 65px;
+    padding-top: 40px;
+    padding-left: 34px;
+    padding-right: 14px;
     font-weight: bold;
 }
