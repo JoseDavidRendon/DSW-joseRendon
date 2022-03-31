@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight:1;
-    color: rgb(80, 80, 80);
+    color: #505050;
     font-size: medium;
 }
 
@@ -19,7 +19,7 @@ header{
     display: flex;
     width: 100%;
     justify-content: center;
-    z-index: 5;
+    z-index: 100;
     top :0%
 }
 .Links{
@@ -46,7 +46,9 @@ header{
     width: 200%;
     right: 58%;
     top: 12px;
+    box-shadow: 0px 11px 10px 0px #5b7aa593;
 }
+
 
 .Links li{
     text-align: center;
@@ -107,17 +109,19 @@ header{
 
 .fondo{
     position: absolute;
-    background: linear-gradient(180deg, rgba(210,231,244,1) 7%, rgba(210,231,244,1) 53%, rgba(255,255,255,0) 85%);
+    background: linear-gradient(180deg, #d1e7f5 7%, rgba(210,231,244,1) 53%, rgba(255,255,255,0) 85%);
     width: 100%;
     height: 500px;
     top: 47px;
     background-size: 100%;
     z-index: 1;
+    
 }
 article{
     display: flex;
     justify-content: center;
-    max-width: 80%;
+    flex-direction: column;
+    max-width: 1000px;
     min-width: none;
     margin-left: auto;
     margin-right: auto;
@@ -127,12 +131,13 @@ article{
 }
 .border{
     align-content: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.712);
     border-radius: 50px;
     height: 100vh;
-    width: 1200px;
+    max-width: 100%;
     margin-top: 30px;
     padding: 50px;
+    
 }
 
 /* Footer */
@@ -145,12 +150,13 @@ footer{
     display: flex;
     justify-content:center;
     box-shadow: 0px -4px #dddddd;
+    z-index: 80;
+    background-color: white;
 }
 
 .footerContenedor{
     display: flex;
     justify-content: space-between;
-    
     width: 1000px;
 }
 #creador{
@@ -167,4 +173,80 @@ footer p{
     font-weight: bold;
     font-size: 15px;
 
+}
+
+/* Organización del contenido*/
+.contenido{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bloques{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+
+/* Aside */
+
+aside{
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    border: 4px solid #dddddd;
+    z-index: 50;
+    right: -375px;
+    animation-duration: 0.5s;
+}
+
+.cont_aside{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%; 
+}
+
+#aside_bar:hover{
+    right: -1px;
+    animation-name: slideAside; 
+}
+
+@keyframes slideAside{
+    from{
+        right: -375px;
+    }
+    to{
+        right: -1px;
+    }
+}
+
+aside iframe{
+    padding-top: 6%;
+    padding-left: 30px;
+    width:100%;
+    height: 100%;
+}
+
+
+.icon_abrir{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 4px solid rgb(212, 212, 212);
+    border-radius: 100px;
+    top: 50%;
+    right: 30px;
+}
+.icon_abrir img{
+    width: 50%;
+    padding-left: 10px;
+    padding-top: 10px ;
+}
+
+.cont_aside h1{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
 }
