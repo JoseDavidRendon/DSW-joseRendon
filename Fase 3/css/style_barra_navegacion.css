@@ -1,3 +1,7 @@
+
+/* Aquí se colocan todos los parámetros de diseño de la plantilla, es decir, todo lo que no
+cambiará y se reutilizará para las diferentes páginas */
+
 *{
     margin: 0;
     padding: 0;
@@ -292,8 +296,8 @@ aside::-webkit-scrollbar{
         display: flex;
         width: 100%;
         z-index: 4;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .Links{
         position: fixed;
@@ -347,6 +351,8 @@ aside::-webkit-scrollbar{
         padding-bottom: 20px;
     }
     .fondobar:hover{
+        animation-name: slideBarResponsive;
+        animation-duration: 0.5s;
         height: 270px;
     }
     
@@ -356,6 +362,8 @@ aside::-webkit-scrollbar{
 
     .fondobar:hover #top{
         display: block;
+        animation-name: slideLinksResponsive;
+        animation-duration: 1s;
         z-index: 9999;
     }
     
@@ -367,5 +375,21 @@ aside::-webkit-scrollbar{
         flex-direction: column;
         width: auto;
         z-index: 99;
+    }
+    @keyframes slideBarResponsive{
+        from{
+            height:47px
+        }
+        to{
+            height:270px
+        }
+    }
+    @keyframes slideLinksResponsive{
+        from{
+            opacity: 0%;
+        }
+        to{
+            opacity: 100%;
+        }
     }
 }
