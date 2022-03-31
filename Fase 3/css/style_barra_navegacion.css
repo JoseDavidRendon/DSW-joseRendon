@@ -333,6 +333,9 @@ aside::-webkit-scrollbar{
         display: flex;
         width: 40px;
         z-index: 80;
+        position: fixed;
+        top: 3%;
+        right: 10%;
     }
     .slide{
         animation-name: none;
