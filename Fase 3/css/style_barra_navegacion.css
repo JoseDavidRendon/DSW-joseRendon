@@ -334,7 +334,7 @@ aside::-webkit-scrollbar{
         width: 40px;
         z-index: 80;
         position: fixed;
-        top: 3%;
+        top: 15px;
         right: 10%;
     }
     .slide{
