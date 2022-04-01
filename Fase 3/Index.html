@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/style_barra_navegacion.css">
+    <link rel="stylesheet" href="css/stylebase.css">
     <link rel="stylesheet" href="css/style_Inicio.css">
 </head>
 <body>
@@ -13,38 +13,38 @@
     <header>
         <div class="Navegacion"> <!-- barra de navegación con flex-->
             
-            <div>
+            <div class="logo">
                 <!-- Logo de la página-->
                 <a href="Index.html"><img class="logonav" src="Images/Logo.png" alt="Logo Unad"></a>
             </div>
-            <nav id="responsive_menu"> <!-- Temas de la página-->
-                <div class="fondobar"> <!-- este div será utilizado para aplicar un background cuando 
-                la resolución de la pantalla sea inferior a 982 pixels -->
-                    <img id="menu_icon" src="Images/menu.png" alt=""> <!-- símbolo de menú -->
-                    <ul class="Links"> 
-                        <li id="top"><a href="Index.html">Inicio</a></li> <!-- Temas-->
-                        <li id="top"><a href="#">Temas</a>
-                            <ul class="slide"> <!--Contenedor desplegable de subtemas-->
-                                <li><a href="#">Sintaxis y Selectores CSS</a></li> <!-- subtemas-->
-                                <li id="ultuma_casilla"><a href="#">Interacción Humano Ordenador</a></li>
-                            </ul>
-                        </li>
-                        <li id="top"><a href="#">Recursos</a>
-                            <ul class="slide">
-                                <li><a href="#">Ejemplos</a></li>
-                                <li id="ultuma_casilla" ><a href="#">Tutorial selectores</a></li>
-                            </ul>
-                        </li>
-                        <li id="top"><a href="#">Aprendizaje</a>
-                            <ul class="slide">
-                                <li><a href="#">Actividad 1</a></li>
-                                <li id="ultuma_casilla"><a href="#">Actividad 2</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                
-            </nav>
+            <div>
+                <nav> <!-- Temas de la página-->            
+                        <img id="menu_icon" src="Images/menu.png" alt=""> <!-- símbolo de menú -->
+                        <ul class="Links"> 
+                            <li id="top"><a href="Index.html">Inicio</a></li> <!-- Temas-->
+                            <li id="top"><a>Temas</a>
+                                <ul class="slide"> <!--Contenedor desplegable de subtemas-->
+                                    <li><a href="#">Sintaxis y Selectores CSS</a></li> <!-- subtemas-->
+                                    <li><a href="#">Interacción Humano Ordenador</a></li>
+                                </ul>
+                            </li>
+                            <li id="top"><a >Recursos</a>
+                                <ul class="slide">
+                                    <li><a href="#">Ejemplos</a></li>
+                                    <li><a href="#">Tutorial selectores</a></li>
+                                </ul>
+                            </li>
+                            <li id="top"><a >Aprendizaje</a>
+                                <ul class="slide">
+                                    <li><a href="#">Actividad 1</a></li>
+                                    <li><a href="#">Actividad 2</a></li>
+                                </ul>
+                            </li>
+                            <li id="top"><a href="Index.html">Acerca</a></li> <!--Fin temas-->
+                        </ul>
+                    
+                </nav>
+            </div>
         </div>
         
     </div> 
@@ -54,24 +54,24 @@
 
 
 
-    <div class="bloques"> <!-- La plantilla está dividida por el header, el contenido y el footer
+    <main class="bloques"> <!-- La plantilla está dividida por el header, el contenido y el footer
     En este caso dividí la sección del contenido en dos: artículo y sidebar, posteriormente le
     apliqué un posicionamiento "fixed" al aside para ocultarlo y no modificar el éstilo que llevaba
     la página -->
         <div class="contenido" > <!-- aquí se pone lo que se quiera mostrar -->
             <article>
-                <div class="informacion_principal"> <!-- Aquí está el encabezado del contenido -->
+                <section class="informacion_principal"> <!-- Aquí está el encabezado del contenido -->
                     <div>
                         <h1>Sintaxis y Selectores CSS. <br>
                             Interacción humano Ordenador</h1>
                     </div>
-                    <div>
+                    <div class="imgEncabezado">
                         <img src="Images/ImagenPrincipal.png" alt="s"> <!-- Imagen del encabezado -->
                     </div>
-                </div>
+                </section>
                 
-                <div>
-                    <div class="border"> <!-- Aqui se introduce el resto de la información.-->
+                <section id="cont_prin">
+                    <div class="contenido_principal"> <!-- Aqui se introduce el resto de la información.-->
                         <div class="Parrafo_principal">
                             <h1>Popósito del sitio</h1>
                             <p>Esta página web tiene como objetivo ofrecer información sobre el uso de la isntaxis y selectores CSS, así como sobre la interacción human oordenador.
@@ -79,7 +79,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </section>
             </article>
         </div>
     
@@ -100,9 +100,8 @@
                 </p>
             </div>
         </aside>
-        <div id="btn_salir"><h1><span style="font-weight: bold; color:white;" >X</h1></span></div>
         <div class="icon_abrir"><img src="images/icon_abrir.png" alt=""></div>    
-    </div> <!-- Aquí cierra todo lo referente al contenido de la página para dar paso al footer -->
+    </main> <!-- Aquí cierra todo lo referente al contenido de la página para dar paso al footer -->
     
     <footer>
         <div>

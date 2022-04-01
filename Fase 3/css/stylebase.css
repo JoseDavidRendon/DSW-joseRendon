@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:1;
+    color: #505050;
+    font-size: medium;
+}
+
+
+/* _________BARRA DE NAVEGACIÓN_______ */
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0px 10px 32px #88b0e7;
+}
+
+
+
+.Navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+    height: 40px;
+    padding-top: 0px;
+}
+
+.Links{
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.Links a{
+    text-decoration: none;
+    
+    font-weight: bold;
+    color: #576677;
+}
+
+#top{
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor:context-menu;
+    
+}
+
+#top .slide{
+    top: 34px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: absolute;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 10px 12px 0px #88b0e7;
+}
+#top .slide li{
+    list-style: none;
+    padding-bottom: 10px;
+    
+}
+
+#menu_icon{
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+.logo{
+    width: 100%px;
+    margin: 0%;
+    padding-top: 5px;
+}
+.logo img{
+    width: 100px;
+}
+
+/* acciones y animaciones */
+
+#top:hover .slide{
+    display: block;
+    animation-name: slide_anim;
+    animation-duration: 0.1s;
+}
+
+#top:hover{
+    padding-bottom: 6px;
+    box-shadow: inset 0px -4px #88b0e7;
+}
+
+.slide li:hover a{
+    color: #88b0e7;
+}
+
+@keyframes slide_anim{
+    from{
+        top:1px;
+        opacity: 0%;
+    }
+    to{
+        top: 34px;
+        opacity: 100%;
+    }
+}
+
+
+
+
+/* ___________ FONDO DE LA PÁGINA_________ */
+
+.fondo{
+    position: absolute;
+    background: linear-gradient(180deg, #d1e7f5 7%, rgba(210,231,244,1) 53%, rgba(255,255,255,0) 85%);
+    width: 100%;
+    height: 500px;
+    top: 40px;
+    z-index: -1;
+}
+
+/* __________ CONTENIDO DE LA PÁGINA_______ */
+
+.bloques{
+    padding-top: 80px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* aside */
+
+aside{
+    position: fixed;
+    top: 0%;
+    width: 30px;
+    height: 100vh;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #88b0e748 ;
+    background-color: white;
+    z-index: 20;
+}
+
+.cont_aside{
+    display: none;
+    opacity: 0%;
+    flex-direction: column;
+    padding-top: 60px;
+    height: 80%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+aside iframe{
+    padding-top: 20px;
+    width: 360px;
+    height: 500px;
+    left: 10px;
+    padding-bottom: 10px;
+}
+
+aside p, h1{
+    font-weight: bold;
+    padding-right: 10px;
+}
+.icon_abrir img{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top:50%;
+    opacity: 60%;
+    animation-name: icon_abrir_anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+/* acciones y animaciones del aside */
+
+
+aside:hover{
+    width: 380px;
+    animation-name: asideAnim;
+    animation-duration: 0.2s;
+}
+aside:hover .cont_aside{
+    display: flex;
+    animation-name: aside_opacity;
+    animation-duration: 1s;
+    opacity: 100%;
+}
+@keyframes aside_opacity{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+@keyframes asideAnim{
+    from{
+        width: 30px;
+    }
+    to{
+        width: 380px;
+    }
+}
+
+
+@keyframes icon_abrir_anim{
+    from{
+        right: 30px;
+    }
+    to{
+        right: 50px;
+    }
+}
+
+
+/*_____________ FOOTER __________*/
+
+footer{
+    padding-top: 30px;
+    bottom: 0%;
+    z-index: 100;
+}
+.footerContenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    border: 4px solid #88b0e748  ;
+    background-color: #ffffff;
+    z-index: 100;
+    
+
+}

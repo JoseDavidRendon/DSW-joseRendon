@@ -10,14 +10,8 @@ cambiará y se reutilizará para las diferentes páginas */
     color: #505050;
     font-size: medium;
 }
-
 /* Barra de navegación */
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 header{
     position: fixed;
     display: flex;
@@ -29,10 +23,15 @@ header{
 .Links{
     display: flex;
     list-style: none; 
-    position: absolute;  
     right: 4%; 
     top: 16px;
 }
+
+.responsive_menu{
+    width: 100%;
+    height: 100%;
+}
+
 .Navegacion{
     display: flex;
     justify-content: space-between;
@@ -62,7 +61,7 @@ header{
     vertical-align: middle;
     position: relative;   
     width: 90px;
-    padding: 0px 30px 0px 30px;
+    padding: 0px 18px 0px 18px;
     background-color: white;
 }
 #ultuma_casilla{
@@ -72,6 +71,9 @@ header{
 #top:not(.slide):hover{
     box-shadow: 0px 4px rgb(8, 40, 49);
     
+}
+#top {
+    cursor: context-menu;
 }
 .Links a {
     font-weight: 700;
@@ -215,7 +217,7 @@ aside{
 
 
 .cont_aside{
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%; 
     display: flex;
