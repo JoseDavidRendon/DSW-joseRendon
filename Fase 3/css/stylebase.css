@@ -47,7 +47,7 @@ header{
     padding-left: 10px;
     padding-right: 10px;
     cursor:context-menu;
-    
+    margin-bottom: 10px;
 }
 
 #top .slide{
@@ -91,7 +91,7 @@ header{
 }
 
 #top:hover{
-    padding-bottom: 6px;
+    padding-bottom: 1%;
     box-shadow: inset 0px -4px #88b0e7;
 }
 
@@ -101,7 +101,7 @@ header{
 
 @keyframes slide_anim{
     from{
-        top:1px;
+        top:30px;
         opacity: 0%;
     }
     to{
