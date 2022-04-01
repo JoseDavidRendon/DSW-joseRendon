@@ -56,7 +56,7 @@ header{
     padding-bottom: 10px;
     position: absolute;
     display: none;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 3%, rgba(255,255,255,1) 4%);
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 0px 0px 10px 10px;
@@ -91,7 +91,7 @@ header{
 }
 
 #top:hover{
-    padding-bottom: 1%;
+    padding-bottom: 1.4%;
     box-shadow: inset 0px -4px #88b0e7;
 }
 
@@ -250,4 +250,12 @@ footer{
 }
 .logonav{
     width: 100px;
+}
+
+
+.contenido_principal{
+    height: 100%;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 30px 30px 30px 30px;
 }
