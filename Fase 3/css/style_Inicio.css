@@ -67,7 +67,7 @@
     padding-bottom: 70px;
 }
 #imagen img{
-    width: 700px;
+    width: 80%;
     box-shadow: 0px 0px 15px -5px #000000d3;
     border-radius: 20px;
 }
