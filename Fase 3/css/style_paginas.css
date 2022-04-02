@@ -1,4 +1,7 @@
-/*------------COMPARTIDO---------  */
+/*Aquí van únicamente los estilos de texto y contenido*/
+
+
+/*------------COMPARTIDO ENTRE VARIAS PÁGINAS---------  */
 .titulo{ /*sintaxis y hor*/
     display: flex;
     flex-direction: column;
@@ -57,7 +60,7 @@
 
 
 
-/*------------INDEX------------*/
+/*------------SOLO INDEX------------*/
 .imagenGrande img{
     width:80%;
     box-shadow: 0px 0px 15px -5px #000000d3;
@@ -117,7 +120,7 @@
 
 
 
-/*-----------HOR---------------*/
+/*-----------SOLO HOR---------------*/
 #titulo_secundario{
     padding-left: 30px;
 }
@@ -132,7 +135,7 @@
 
 
 
-/*------------SINTAXIS--------*/
+/*------------SOLO SINTAXIS--------*/
 #ejemplo{
     padding-left: 30px;
     padding-top: 0px;
