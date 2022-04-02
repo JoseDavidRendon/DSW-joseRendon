@@ -170,3 +170,28 @@
     padding-left: 25px;
     padding-right: 50px;
 }
+
+
+
+
+
+/*------------SOLO ACERCA--------------------*/
+#Acerca_datos_foto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-content: center;
+    
+}
+
+#Acerca_datos_foto img{
+    width: 130px;
+    margin-right: 40px;
+    margin-top: 0px;
+}
+
+#datos{
+    padding-top: 15px;
+}
