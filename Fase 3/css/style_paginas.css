@@ -1,4 +1,5 @@
-.titulo{
+/*------------COMPARTIDO---------  */
+.titulo{ /*sintaxis y hor*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,43 +8,37 @@
     padding-right: 40px;
     background-color: rgba(255, 255, 255, 0.753);
     border-radius: 30px 30px 30px 30px;
-    line-height: 50px;
-
-    
-}
-
-.titulo h1{
+    line-height: 50px;   
+} 
+.titulo h1{ /*sintax y hor*/
     font-size: 40px;
     padding: 10px;
     opacity: 90%;
 }
-
-#cont_prin{
+#cont_prin{ /*sintax, hor e index*/
     padding-top: 60px;
     padding-left: 0px;
     padding-top: 30px;
     max-width: 1000px;
     color:#505050;
 }
-.contenido_principal h1{
-    font-size: 20px;
-    
+.contenido_principal h1{ /*sintax, hor e index  */
+    font-size: 20px;   
 }
-.contenido_principal p{
+.contenido_principal p{ /*sintax, hor e index*/
     padding-top: 13px;
 }
-#referencia{
+#referencia{ /*sintax y hor*/
     margin-top: 20px;
     font-size: 15px;
     opacity: 70%;
 }
-
-#referencia_pie{
+#referencia_pie{ /*sintax y hor*/
     display: flex;
     justify-content:center;
     padding-bottom: 40px;
 }
-.imagen, .imagenGrande{
+.imagen, .imagenGrande{ /* sintax, hor e index */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -51,12 +46,18 @@
     padding-bottom: 30px;
     text-align: center;
 }
-
-.imagen img{
+.imagen img{ /*sintax y hor*/
     width:50%;
     box-shadow: 0px 0px 15px -5px #000000d3;
     border-radius: 20px;
 }
+
+
+
+
+
+
+/*------------INDEX------------*/
 .imagenGrande img{
     width:80%;
     box-shadow: 0px 0px 15px -5px #000000d3;
@@ -65,17 +66,8 @@
 .imagenGrande{
     padding-top: 40px;
 }
-
-#titulo_secundario{
-    padding-left: 30px;
-}
 #lista{
     padding-left: 30px;
-}
-#ejemplo{
-    padding-left: 30px;
-    padding-top: 0px;
-    color:#505050;
 }
 .informacion_principal img{
     width: 300px;
@@ -87,7 +79,6 @@
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    
 }
 .informacion_principal h1{
     padding-top: 60px;
@@ -121,6 +112,32 @@
     padding-right: 20px;
 }
 
+
+
+
+
+
+/*-----------HOR---------------*/
+#titulo_secundario{
+    padding-left: 30px;
+}
+#pad_hor{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+
+
+
+
+/*------------SINTAXIS--------*/
+#ejemplo{
+    padding-left: 30px;
+    padding-top: 0px;
+    color:#505050;
+}
 #sintaxis-contenedor-padding{
     padding-left: 50px;
 }
