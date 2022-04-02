@@ -76,6 +76,7 @@
     box-shadow: 0px -1px 20px 0px #6584af9c;
     border: 1px solid rgb(221, 221, 221);
     border-radius: 20px;
+    
 }
 .imgEncabezado{
     
@@ -86,7 +87,9 @@
     max-width: 1000px;
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-evenly;
+    padding-right: 40px;
+    padding-left: 20px;
 }
 .informacion_principal h1{
     padding-top: 60px;
@@ -95,6 +98,7 @@
     font-weight: bold;
     opacity: 90%;
     color: #505050;
+    
 }
 .Parrafo_principal{
     padding-left: 20px;

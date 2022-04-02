@@ -207,7 +207,7 @@ aside p, h1{
     height: 30px;
     right: 30px;
     top:50%;
-    opacity: 20%;
+    opacity: 15%;
     animation-name: icon_abrir_anim;
     animation-duration: 1s;
     animation-iteration-count: infinite;
