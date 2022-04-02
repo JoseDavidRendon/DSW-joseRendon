@@ -175,7 +175,7 @@ aside{
     flex-direction: column;
     box-shadow: inset 4px 0px #88b0e73f;
     background-color: rgb(255, 255, 255);
-    opacity: 35%;
+    opacity: 20%;
     z-index: 20;
 }
 
@@ -207,7 +207,7 @@ aside p, h1{
     height: 30px;
     right: 30px;
     top:50%;
-    opacity: 60%;
+    opacity: 20%;
     animation-name: icon_abrir_anim;
     animation-duration: 1s;
     animation-iteration-count: infinite;
