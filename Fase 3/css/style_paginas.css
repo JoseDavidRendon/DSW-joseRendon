@@ -125,13 +125,25 @@
 }
 #pad_hor p{
     padding-left: 30px;
-    padding-right: 60px;
+    padding-right: 30px;
 }
 #pad_hor h1{
-    padding-left: 30px;
-    padding-right: 60px;
+    padding-left:30px;
+    padding-right: 30px;
 }
-
+#img_int img{
+    width: 30px;
+    height: 30px;
+}
+#img_int{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#img_int p{
+    padding-right: 30px;
+}
 
 
 
