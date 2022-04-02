@@ -166,7 +166,8 @@ aside{
     display: flex;
     flex-direction: column;
     box-shadow: inset 4px 0px #88b0e73f;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    opacity: 35%;
     z-index: 20;
 }
 
@@ -213,6 +214,8 @@ aside:hover{
     width: 380px;
     animation-name: asideAnim;
     animation-duration: 0.2s;
+    opacity: 100%;
+    
 }
 aside:hover .cont_aside{
     display: flex;
