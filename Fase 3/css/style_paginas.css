@@ -71,16 +71,22 @@
 #lista{
     padding-left: 30px;
 }
-.informacion_principal img{
-    width: 300px;
+.imgEncabezado img{
+    width: 100%;
     box-shadow: 0px -1px 20px 0px #6584af9c;
     border: 1px solid rgb(221, 221, 221);
     border-radius: 20px;
 }
+.imgEncabezado{
+    
+    width: 40%;
+}
+
 .informacion_principal{
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:center;
 }
 .informacion_principal h1{
     padding-top: 60px;
