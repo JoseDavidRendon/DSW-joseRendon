@@ -1,19 +1,27 @@
 /* Aquí se modifica únicamente lo relacionado con la plantilla base:
-barra de navegación, footer, aside,  */
-
-
-
+barra de navegación, footer, aside,etc  */
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
     font-weight:1;
+    font-family: Arial, Helvetica, sans-serif;
     color: #505050;
     font-size: medium;
 }
 
 
-
+.bloques{
+    animation-name: inicio;
+    animation-duration: 0.5s;
+}
+@keyframes inicio{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
 
 /* _________BARRA DE NAVEGACIÓN_______ */
 
