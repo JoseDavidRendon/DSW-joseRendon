@@ -146,7 +146,7 @@ header{
     width: 100%;
     height: 500px;
     top: 40px;
-    z-index: -99;
+    z-index: -1;
 }
 
 /* __________ CONTENIDO DE LA PÁGINA_______ */
