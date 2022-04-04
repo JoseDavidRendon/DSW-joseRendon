@@ -11,7 +11,6 @@ barra de navegación, footer, aside,etc  */
 }
 
 body{
-    position: relative;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,7 +18,6 @@ body{
 }
 
 .bloques{
-    
     animation-name: inicio;
     animation-duration: 0.5s;
 }
@@ -148,10 +146,16 @@ header{
     width: 100%;
     height: 500px;
     top: 40px;
-    z-index: -1;
+    z-index: -99;
 }
 
 /* __________ CONTENIDO DE LA PÁGINA_______ */
+.contenido_principal{
+    height: 100%;
+    padding: 24px 40px 24px 35px;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 30px 30px 30px 30px;
+}
 
 .bloques{
     width: 100%;
@@ -185,6 +189,7 @@ aside{
     background-color: rgb(255, 255, 255);
     opacity: 20%;
     z-index: 20;
+    transition-duration: 0.3s;
 }
 
 .cont_aside{
@@ -215,7 +220,7 @@ aside p, h1{
     height: 30px;
     right: 30px;
     top:50%;
-    opacity: 30%;
+    opacity: 60%;
     animation-name: icon_abrir_anim;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -228,45 +233,14 @@ aside p, h1{
 
 aside:hover{
     width: 380px;
-    animation-name: asideAnim;
-    animation-duration: 0.2s;
     opacity: 100%;
     
 }
 aside:hover .cont_aside{
     display: flex;
-    animation-name: aside_opacity;
-    animation-duration: 1s;
+    
     opacity: 100%;
 }
-@keyframes aside_opacity{
-    from{
-        opacity: 0%;
-    }
-    to{
-        opacity: 100%;
-    }
-}
-
-@keyframes asideAnim{
-    from{
-        width: 30px;
-    }
-    to{
-        width: 380px;
-    }
-}
-
-
-@keyframes icon_abrir_anim{
-    from{
-        right: 30px;
-    }
-    to{
-        right: 50px;
-    }
-}
-
 
 /*_____________ FOOTER __________*/
 
@@ -275,30 +249,163 @@ footer{
     flex-direction: column;
     align-items: center;
     margin-top: auto;
+    width: 100%;
+    background-color: WHITE;
+    
+    z-index: 100;
 }
 .footerContenedor{
     display: flex;
-    max-width: 100vh;
-    border:1px solid red;
-}
-.footerContenedor span{
-    font-size: 2vh;
-}
-.logonav{
-    max-width: 12vh;
-}
-#contacto p{
-    font-size: 2vh;
-}
-.foot.conten{
-    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: auto;
 }
 
 
 
-.contenido_principal{
-    height: 100%;
-    padding: 24px 32px 24px 15px;
-    background-color: rgba(255, 255, 255, 0.568);
+
+
+
+
+
+
+/*Aquí van únicamente los estilos de texto y contenido*/
+
+
+/*------------COMPARTIDO ENTRE VARIAS PÁGINAS---------  */
+.titulo{ /*sintaxis y hor*/
+    padding-left: 20px;
+    padding-right:20px;
+    background-color: rgba(255, 255, 255, 0.753);
     border-radius: 30px 30px 30px 30px;
+    line-height: 50px;   
+} 
+.titulo h1{ /*sintax y hor*/
+    font-size: 40px;
+    padding: 10px;
+    opacity: 90%;
+}
+#cont_prin{ /*sintax, hor e index*/
+    margin-top: 30px;
+    max-width: 1000px;
+}
+.contenido_principal h1{ /*sintax, hor e index  */
+    font-size: 20px;   
+}
+.contenido_principal p{ /*sintax, hor e index*/
+    padding-top: 13px;
+}
+#referencia{ /*sintax y hor*/
+    margin-top: 20px;
+    font-size: 15px;
+    opacity: 70%;
+}
+#referencia_pie{ /*sintax y hor*/
+    display: flex;
+    justify-content:center;
+    padding-bottom: 40px;
+}
+.imagen, .imagenGrande{ /* sintax, hor e index */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.imagen img{ /*sintax y hor*/
+    width:50%;
+    box-shadow: 0px 0px 15px -5px #000000d3;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+/*------------SOLO INDEX------------*/
+.imagenGrande img{
+    width:80%;
+    box-shadow: 0px 0px 15px -5px #000000d3;
+    border-radius: 20px;
+}
+.imagenGrande{
+    padding-top: 40px;
+}
+#lista{
+    padding-left: 30px;
+}
+.imgEncabezado img{
+    width: 100%;
+    box-shadow: 0px -1px 20px 0px #6584af9c;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 20px;
+    
+}
+.imgEncabezado{
+    
+    width: 40%;
+}
+
+.informacion_principal{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+.informacion_principal h1{
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 90%;
+    color: #505050;
+    
+}
+.Parrafo_principal{
+    padding-left: 40px;
+    padding-right: 40px;
+    opacity: 80%;
+}
+.Parrafo_principal h1{
+    font-size: 20px;
+}
+.Parrafo_principal p{
+    padding-left: 10px;
+    padding-top: 15px;
+}
+#intro h1{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+#intro p{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+/*------------SOLO ACERCA--------------------*/
+#Acerca_datos_foto{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+#Acerca_datos_foto img{
+    width: 150px;
+    margin-right: 20px;
+    
+}
+
+#datos{
+    margin-top: 10px;
 }
