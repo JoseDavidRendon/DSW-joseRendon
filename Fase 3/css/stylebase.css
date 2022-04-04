@@ -10,6 +10,13 @@ barra de navegación, footer, aside,etc  */
     
 }
 
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
 
 .bloques{
     
@@ -37,10 +44,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    overflow-x: scroll;
-}
-header::-webkit-scrollbar{
-    display: none;
 }
 
 
@@ -268,35 +271,30 @@ aside:hover .cont_aside{
 /*_____________ FOOTER __________*/
 
 footer{
-    bottom: 0px;
-    background-color: #ffffff;
-    z-index: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
 }
 .footerContenedor{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
-    width: 100%;
-    box-shadow: 0px -4px 0px #88b0e752;
-    height: 60px;
-    background-color: #ffffff;
+    max-width: 100vh;
+    border:1px solid red;
 }
-
+.footerContenedor span{
+    font-size: 2vh;
+}
 .logonav{
-    padding-left: 1vh;
-    padding-right: 1vh;
-    width: 16vh;
+    max-width: 12vh;
+}
+#contacto p{
+    font-size: 2vh;
+}
+.foot.conten{
+    max-width: 100%;
 }
 
 
-#creador span{
-    width: 100%;
-    font-size: 2vh;
-}
-.footerContenedor p{
-    font-size: 2vh;
-}
 
 .contenido_principal{
     height: 100%;
