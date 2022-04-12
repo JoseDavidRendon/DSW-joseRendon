@@ -224,7 +224,15 @@ aside p, h1{
     animation-name: icon_abrir_anim;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation-direction: alternate;
+}
+@keyframes icon_abrir_anim{
+    from{
+        transform:translateX(0px)
+    }
+    to{
+        transform:translateX(-20px)
+    }
 }
 
 
