@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacción Humano Ordenador</title>
+    <link rel="stylesheet" href="css/stylebase.css">
+</head>
+<body>
+    <!-- Plantillla a utilizar para todas las páginas-->
+    <header>
+        <div class="Navegacion"> <!-- barra de navegación con flex-->
+            
+            <div class="logo">
+                <!-- Logo de la página-->
+                <a href="Inicio.html"><img class="logonav" src="Images/Logo.png" alt="Logo Unad"></a>
+            </div>
+            <div>
+                <nav> <!-- Temas de la página-->            
+                        <img id="menu_icon" src="Images/menu.png" alt=""> <!-- símbolo de menú -->
+                        <ul class="Links"> 
+                            <li id="top"><a href="Inicio.html">Inicio</a></li> <!-- Temas-->
+                            <li id="top"><a>Temas</a>
+                                <ul class="slide"> <!--Contenedor desplegable de subtemas-->
+                                    <li><a href="SintaxisYSelect.html">Sintaxis y Selectores CSS</a></li> <!-- subtemas-->
+                                    <li><a href="Interaccion_hor.html">Interacción Humano Ordenador</a></li>
+                                </ul>
+                            </li>
+                            <li id="top"><a >Recursos</a>
+                                <ul class="slide">
+                                    <li><a href="tutorialSintaxis.html">Vídeo explicativo</a></li>
+                                    <li><a href="tutorialSelectores.html">Ejemplo de aplicación</a></li>
+                                </ul>
+                            </li>
+                            <li id="top"><a >Aprendizaje</a>
+                                <ul class="slide">
+                                    <li><a href="Actividad1.html">Actividad 1</a></li>
+                                    <li><a href="Actividad2.html">Actividad 2</a></li>
+                                </ul>
+                            </li>
+                            <li id="top"><a href="Acerca.html">Acerca</a></li> <!--Fin temas-->
+                        </ul>
+                    
+                </nav>
+            </div>
+        </div>
+        
+    </div> 
+    </header>
+    <div class="fondo"></div> <!--Fondo de la página-->
+
+
+
+    <main class="bloques"> <!-- La plantilla está dividida por el header, el contenido y el footer
+    En este caso dividí la sección del contenido en dos: artículo y sidebar, posteriormente le
+    apliqué un posicionamiento "fixed" al aside para ocultarlo y no modificar el éstilo que llevaba
+    originalmente la página -->
+        <div class="contenido" > <!-- aquí se pone lo que se quiera mostrar -->
+            <div>
+                
+                <section class="titulo" >
+                    <h1>Interacción humano ordenador</h1>
+                </section>
+
+            </div>
+            <article id="cont_prin">
+                <div id="pad_hor" class="contenido_principal" style="text-align: justify;"> <!-- Aqui se introduce el resto de la información.-->
+                    <div id="titulo_secundario"><h1>Interacción humano ordenador (HCI)</h1></div>
+                    <section class="imagen">
+                        <img src="Images/56a04815b1d24b7d61fb6249_1453349199107_2048.png" alt="Interacción humano ordenador" style="margin-top:20px;">
+                    </section>
+                    <section >
+                        <p>"La interacción humano-computadora se preocupa por la realización conjunta de tareas por parte de humanos
+                            y máquinas; por la estructura de la comunicación entre humanos y máquinas; por las capacidades humanas para usar máquinas (incluyendo
+                            la facilidad de uso de las interfaces); por los algoritmos y el programado de la propia interfaz; por las preocupaciones
+                            de ingeniería que surgen al diseñar y construir interfaces; por el proceso de especificación, diseño e implementación de 
+                            interfaces; y por los compromisos de diseño. La interacción humano-computadora tiene así un aspecto científico, un aspecto de ingeniería
+                            y un aspecto de diseño".
+                        </p>
+                    </section>
+                    <div id="referencia_pie"><p>Urriculla, C.-C.j. (1991). ACM SIGCHI Curriculla for Human-Computer Interaction</p></div>
+                    <section>
+                        <p>
+                            "Se trata de la disciplina que estudia cómo las personas interactúan con las computadoras y hasta qué punto las computadoras se desarrol
+                            lan para interactuar con las personas se llama Interacción Humano-Computadora. HCI consta de tres componentes: los usuarios, 
+                            los ordenadores y la interacción entre ellos.
+                            <br><br>
+                            La Interacción Humano-Computadora se convirtió oficialmente en una disciplina con el advenimiento de la computadora personal. Con el 
+                            primer Macintosh, IBM PC 5150 y Commodore 64 utilizados en la oficina, la gente empezó a darse cuenta de cómo esta transición afectará 
+                            no sólo a su trabajo sino a sus vidas en general. Los PCs fueron lanzados con muchas nuevas características como procesadores de texto, 
+                            facilidades de juego y ayudas de contabilidad. Con el tiempo, su nivel de sofisticación aumentó hasta el punto en que el objetivo era 
+                            hacer que la interacción hombre-computadora se asemejara a la interacción entre humanos, de la forma más natural y sin fisuras posible.
+                            <br> <br>
+                            La usabilidad es uno de los conceptos clave de HCI. Se trata de hacer que los sistemas sean fáciles de aprender y usar. Mejora la 
+                            competitividad, la fidelización de los clientes y reduce los costes. En la fase de prototipado, durante las pruebas de usabilidad, el equipo establece los aspectos positivos y negativos del prototipo antes de seguir desarrollándolo. Las pruebas de usabilidad se basan en factores psicológicos humanos y en la investigación de los usuarios. Los sistemas se prueban en escenarios de la vida real para permitir a los equipos tener una imagen detallada de cómo funciona el sistema. La usabilidad es un aspecto significativo de la capacidad de un sistema para completar una tarea. Es la diferencia entre hacer el mínimo requerido y realizarlo."                
+                        </p>
+                    </section>
+                    <div id="referencia_pie"><p> Brenton. (2019) <span style="font-style: italic;">¿Qué es la Interacción Humano-Computadora?</span>.[online] Disponible en <a href="https://blog.opinno.io/es/blog/que-es-la-interaccion-humano-computadora">blog.opinno.io</a> </p></div>
+                </div>
+            </article>
+        </div>
+    
+
+
+
+    <!-- A partir de aquí también pertenece a la plantilla-->
+        <aside id="aside_bar"> <!-- Aside donde se verá la página de la UNAD -->
+            
+            <div class="cont_aside" >
+                <h1>UNAD</h1>
+                <iframe id="aside_bar" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <p>
+                    Universidad Nacional Abierta y a Distancia UNAD de Colombia <br>
+                    Teléfono: (+57)(1)375 9500 <br>
+                    Correo: atencionalusaurio@unad.edu.co
+
+                </p>
+            </div>
+        </aside>
+        <div class="icon_abrir"><img src="Images/icon_abrir.png" alt="Icon desplegar"></div>    
+    </main> <!-- Aquí cierra todo lo referente al contenido de la página para dar paso al footer -->
+    
+    <footer>
+        <div class="footerContenedor">
+            <div class="foot.conten">
+                <p>josedavidrendonmaca@gmail.com</p>                
+                <p>Skype: josedabid-1994@hotmail.com</p> 
+            </div>
+            <div class="foot.conten">
+                <a href="Inicio.html"><img class="logonav" src="Images/Logo.png" alt="Logo Unad"></a>
+            </div>
+            <div id="creador" class="foot.conten">
+                <span style="opacity: 60%;" >Creado por José David Rendón Maca</span> 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,424 @@
+/* Aquí se modifica únicamente lo relacionado con la plantilla base:
+barra de navegación, footer, aside,etc  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:400;
+    color: #505050;
+    font-size: medium;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.bloques{
+    animation-name: inicio;
+    animation-duration: 0.5s;
+}
+@keyframes inicio{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+/* _________BARRA DE NAVEGACIÓN_______ */
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0px 10px 32px #88b0e7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.Navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+    height: 40px;
+    padding-top: 0px;
+    max-width: 1000px;
+}
+.Links{
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.Links a{
+    text-decoration: none;
+    
+    font-weight: bold;
+    color: #576677;
+}
+
+#top{
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor:context-menu;
+    margin-bottom: 10px;
+}
+
+#top .slide{
+    top: 34px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: absolute;
+    display: none;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 3%, rgba(255,255,255,1) 4%);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 10px 12px 0px #88b0e7;
+}
+#top .slide li{
+    list-style: none;
+    padding-bottom: 10px;
+    
+}
+
+#menu_icon{
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+.logo{
+    width: 100%;
+    margin: 0%;
+    padding-top: 5px;
+}
+.logo img{
+    width: 100px;
+}
+
+/* acciones y animaciones */
+
+#top:hover .slide{
+    display: block;
+    animation-name: slide_anim;
+    animation-duration: 0.1s;
+}
+
+#top:hover{
+    padding-bottom: 1.4%;
+    box-shadow: inset 0px -4px #88b0e7;
+}
+
+.slide li:hover a{
+    color: #88b0e7;
+}
+
+@keyframes slide_anim{
+    from{
+        top:30px;
+        opacity: 0%;
+    }
+    to{
+        top: 34px;
+        opacity: 100%;
+    }
+}
+
+
+
+
+/* ___________ FONDO DE LA PÁGINA_________ */
+
+.fondo{
+    position: absolute;
+    background: linear-gradient(180deg, #d1e7f5 7%, rgba(210,231,244,1) 53%, rgba(255,255,255,0) 85%);
+    width: 100%;
+    height: 500px;
+    top: 40px;
+    z-index: -1;
+}
+
+/* __________ CONTENIDO DE LA PÁGINA_______ */
+.contenido_principal{
+    height: 100%;
+    padding: 24px 40px 24px 35px;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 30px 30px 30px 30px;
+}
+
+.bloques{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    line-height: 25px;
+}
+
+/* aside */
+
+aside{
+    position: fixed;
+    top: 0%;
+    width: 30px;
+    height: 100vh;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 4px 0px #88b0e7b0;
+    background-color: rgb(255, 255, 255);
+    opacity: 20%;
+    z-index: 20;
+    transition-duration: 0.3s;
+}
+
+.cont_aside{
+    display: none;
+    opacity: 0%;
+    flex-direction: column;
+    padding-top: 60px;
+    height: 80%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+aside iframe{
+    padding-top: 20px;
+    width: 360px;
+    height: 500px;
+    left: 10px;
+    padding-bottom: 10px;
+}
+
+aside p, h1{
+    font-weight: bold;
+    padding-right: 10px;
+}
+.icon_abrir img{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top:50%;
+    opacity: 60%;
+    animation-name: icon_abrir_anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes icon_abrir_anim{
+    from{
+        transform:translateX(0px)
+    }
+    to{
+        transform:translateX(-20px)
+    }
+}
+
+
+/* acciones y animaciones del aside */
+
+
+aside:hover{
+    width: 380px;
+    opacity: 100%;
+    
+}
+aside:hover .cont_aside{
+    display: flex;
+    
+    opacity: 100%;
+}
+
+/*_____________ FOOTER __________*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
+    background-color: WHITE;
+    
+    z-index: 100;
+}
+.footerContenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+
+
+
+
+
+
+
+
+/*Aquí van únicamente los estilos de texto y contenido*/
+
+
+/*------------COMPARTIDO ENTRE VARIAS PÁGINAS---------  */
+.titulo{ /*sintaxis y hor*/
+    padding-left: 20px;
+    padding-right:20px;
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 30px 30px 30px 30px;
+    line-height: 50px;   
+} 
+.titulo h1{ /*sintax y hor*/
+    font-size: 40px;
+    padding: 10px;
+    opacity: 90%;
+}
+#cont_prin{ /*sintax, hor e index*/
+    margin-top: 30px;
+    max-width: 1000px;
+}
+.contenido_principal h1{ /*sintax, hor e index  */
+    font-size: 20px;   
+}
+.contenido_principal p{ /*sintax, hor e index*/
+    padding-top: 13px;
+}
+#referencia{ /*sintax y hor*/
+    margin-top: 20px;
+    font-size: 15px;
+    opacity: 70%;
+}
+#referencia_pie{ /*sintax y hor*/
+    display: flex;
+    justify-content:center;
+    padding-bottom: 40px;
+}
+.imagen, .imagenGrande{ /* sintax, hor e index */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.imagen img{ /*sintax y hor*/
+    width:50%;
+    box-shadow: 0px 0px 15px -5px #000000d3;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+/*------------SOLO INDEX------------*/
+.imagenGrande img{
+    width:80%;
+    box-shadow: 0px 0px 15px -5px #000000d3;
+    border-radius: 20px;
+}
+.imagenGrande{
+    padding-top: 40px;
+}
+#lista{
+    padding-left: 30px;
+}
+.imgEncabezado img{
+    width: 100%;
+    box-shadow: 0px -1px 20px 0px #6584af9c;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 20px;
+    
+}
+.imgEncabezado{
+    
+    width: 40%;
+}
+
+.informacion_principal{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+.informacion_principal h1{
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 90%;
+    color: #505050;
+    
+}
+.Parrafo_principal{
+    padding-left: 40px;
+    padding-right: 40px;
+    opacity: 80%;
+}
+.Parrafo_principal h1{
+    font-size: 20px;
+}
+.Parrafo_principal p{
+    padding-left: 10px;
+    padding-top: 15px;
+}
+#intro h1{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+#intro p{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+/*------------SOLO ACERCA--------------------*/
+#Acerca_datos_foto{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+#Acerca_datos_foto img{
+    width: 150px;
+    margin-right: 20px;
+    
+}
+
+#datos{
+    margin-top: 10px;
+    
+}
+
+#iframeYoutube{
+    max-width: 100%;
+}

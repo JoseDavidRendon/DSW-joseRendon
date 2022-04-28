@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Sintaxis</title>
+    <link rel="stylesheet" href="css/stylebase.css">
+</head>
+<body>
+    <!-- Plantillla a utilizar para todas las páginas-->
+    <header>
+        <div class="Navegacion"> <!-- barra de navegación con flex-->
+            
+            <div class="logo">
+                <!-- Logo de la página-->
+                <a href="Inicio.html"><img class="logonav" src="Images/Logo.png" alt="Logo Unad"></a>
+            </div>
+            <div>
+                <nav> <!-- Temas de la página-->            
+                        <img id="menu_icon" src="Images/menu.png" alt=""> <!-- símbolo de menú -->
+                        <ul class="Links"> 
+                            <li id="top"><a href="Inicio.html">Inicio</a></li> <!-- Temas-->
+                            <li id="top"><a>Temas</a>
+                                <ul class="slide"> <!--Contenedor desplegable de subtemas-->
+                                    <li><a href="SintaxisYSelect.html">Sintaxis y Selectores CSS</a></li> <!-- subtemas-->
+                                    <li><a href="Interaccion_hor.html">Interacción Humano Ordenador</a></li>
+                                </ul>
+                            </li>
+                            <li id="top"><a >Recursos</a>
+                                <ul class="slide">
+                                    <li><a href="tutorialSintaxis.html">Vídeo explicativo</a></li>
+                                    <li><a href="tutorialSelectores.html">Ejemplo de aplicación</a></li>
+                                </ul>
+                            </li>
+                            <li id="top"><a >Aprendizaje</a>
+                                <ul class="slide">
+                                    <li><a href="Actividad1.html">Actividad 1</a></li>
+                                    <li><a href="Actividad2.html">Actividad 2</a></li>
+                                </ul>
+                            </li>
+                            <li id="top"><a href="Acerca.html">Acerca</a></li> <!--Fin temas-->
+                        </ul>
+                    
+                </nav>
+            </div>
+        </div>
+        
+    </div> 
+    </header>
+    <div class="fondo"></div> <!--Fondo de la página-->
+
+
+
+    <main class="bloques"> <!-- La plantilla está dividida por el header, el contenido y el footer
+    En este caso dividí la sección del contenido en dos: artículo y sidebar, posteriormente le
+    apliqué un posicionamiento "fixed" al aside para ocultarlo y no modificar el éstilo que llevaba
+    originalmente la página -->
+        <div class="contenido" > <!-- aquí se pone lo que se quiera mostrar -->
+            <div>
+                
+                <section class="titulo" >
+                    <h1>Tutorial Sintaxis CSS</h1>
+                </section>
+
+            </div>
+            <article id="cont_prin">
+                <div id="pad_hor" class="contenido_principal" style="text-align: justify;"> <!-- Aqui se introduce el resto de la información.-->
+                    <div id="titulo_secundario" style="margin-bottom: 20px;"><h1>Vídeo explicativo sobre la sintaxis CSS</h1></div>
+                    <section >
+                        <iframe id="iframeYoutube" width="560" height="315" src="https://www.youtube.com/embed/8Z1SmvoAfZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                </div>
+            </article>
+        </div>
+    
+
+
+
+    <!-- A partir de aquí también pertenece a la plantilla-->
+        <aside id="aside_bar"> <!-- Aside donde se verá la página de la UNAD -->
+            
+            <div class="cont_aside" >
+                <h1>UNAD</h1>
+                <iframe id="aside_bar" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <p>
+                    Universidad Nacional Abierta y a Distancia UNAD de Colombia <br>
+                    Teléfono: (+57)(1)375 9500 <br>
+                    Correo: atencionalusaurio@unad.edu.co
+
+                </p>
+            </div>
+        </aside>
+        <div class="icon_abrir"><img src="Images/icon_abrir.png" alt="Icon desplegar"></div>    
+    </main> <!-- Aquí cierra todo lo referente al contenido de la página para dar paso al footer -->
+    
+    <footer>
+        <div class="footerContenedor">
+            <div class="foot.conten">
+                <p>josedavidrendonmaca@gmail.com</p>                
+                <p>Skype: josedabid-1994@hotmail.com</p> 
+            </div>
+            <div class="foot.conten">
+                <a href="Inicio.html"><img class="logonav" src="Images/Logo.png" alt="Logo Unad"></a>
+            </div>
+            <div id="creador" class="foot.conten">
+                <span style="opacity: 60%;" >Creado por José David Rendón Maca</span> 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
