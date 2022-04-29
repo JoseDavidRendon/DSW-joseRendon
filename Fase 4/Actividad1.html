@@ -6,51 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividad 1</title>
     <link rel="stylesheet" href="css/stylebase.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Plantillla a utilizar para todas las páginas-->
-    <header>
-        <div class="Navegacion"> <!-- barra de navegación con flex-->
-            
+    <header class="bootstrapNav">
+        <div class="Navegacion">
             <div class="logo">
-                <!-- Logo de la página-->
-                <a href="Inicio.html"><img class="logonav" src="Images/Logo.png" alt="Logo Unad"></a>
+                <a href="Inicio.html"><img src="Images/Logo.png" alt="Logo Unad"></a>
             </div>
-            <div>
-                <nav> <!-- Temas de la página-->            
-                        <img id="menu_icon" src="Images/menu.png" alt=""> <!-- símbolo de menú -->
-                        <ul class="Links"> 
-                            <li id="top"><a href="Inicio.html">Inicio</a></li> <!-- Temas-->
-                            <li id="top"><a>Temas</a>
-                                <ul class="slide"> <!--Contenedor desplegable de subtemas-->
-                                    <li><a href="SintaxisYSelect.html">Sintaxis y Selectores CSS</a></li> <!-- subtemas-->
-                                    <li><a href="Interaccion_hor.html">Interacción Humano Ordenador</a></li>
-                                </ul>
-                            </li>
-                            <li id="top"><a >Recursos</a>
-                                <ul class="slide">
-                                    <li><a href="tutorialSintaxis.html">Vídeo explicativo</a></li>
-                                    <li><a href="tutorialSelectores.html">Ejemplo de aplicación</a></li>
-                                </ul>
-                            </li>
-                            <li id="top"><a >Aprendizaje</a>
-                                <ul class="slide">
-                                    <li><a href="Actividad1.html">Actividad 1</a></li>
-                                    <li><a href="Actividad2.html">Actividad 2</a></li>
-                                </ul>
-                            </li>
-                            <li id="top"><a href="Acerca.html">Acerca</a></li> <!--Fin temas-->
-                        </ul>
-                    
-                </nav>
-            </div>
+            <ul class="nav" >
+                <li class="nav-item">
+                  <a class="nav-link" href="Inicio.html">Inicio</a>
+                </li>
+                <li class="dropdown"  >
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Temas
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="border: none; border-radius: 0px 0px 20px 20px;">
+                        <li><a class="dropdown-item" href="SintaxisYSelect.html">sintaxis y Selectores CSS</a></li>
+                        <li><a class="dropdown-item" href="Interaccion_hor.html" >Interacción Humano Ordenador</a></li>
+                      </ul>
+                </li>
+                <li class="dropdown"  >
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recursos
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="border: none; border-radius: 0px 0px 20px 20px;">
+                        <li><a class="dropdown-item" href="tutorialSintaxis.html">Vídeo explicativo</a></li>
+                        <li><a class="dropdown-item" href="tutorialSelectores.html" >Ejemplo de aplicación</a></li>
+                      </ul>
+                </li>
+                <li class="dropdown"  >
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="padding: 8px 0px 0px 0px;"  >
+                        Aprendizaje
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="border: none; border-radius: 0px 0px 20px 20px;">
+                        <li><a class="dropdown-item" href="Actividad1.html">Actividad 1</a></li>
+                        <li><a class="dropdown-item" href="Actividad2.html" >Actividad 2</a></li>
+                      </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Acerca.html" >Acerca</a>
+                  </li>
+              </ul>
         </div>
-        
-    </div> 
     </header>
-    <div class="fondo"></div> <!--Fondo de la página-->
-
-
+    <div class="fondo">
+    </div> <!--Fondo de la página-->
 
     <main class="bloques"> <!-- La plantilla está dividida por el header, el contenido y el footer
     En este caso dividí la sección del contenido en dos: artículo y sidebar, posteriormente le

@@ -42,14 +42,14 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
-
 
 
 .Navegacion{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:space-between;
     width: 100%;
     height: 40px;
     padding-top: 0px;
@@ -99,9 +99,9 @@ header{
     height: 30px;
 }
 .logo{
-    width: 100%;
     margin: 0%;
     padding-top: 5px;
+    
 }
 .logo img{
     width: 100px;
@@ -421,4 +421,34 @@ footer{
 
 #iframeYoutube{
     max-width: 100%;
+}
+
+/*----------------Bootstrap --------------------*/
+.bootstrapNav .nav li a, .bootstrapNav .nav button {
+    font-weight: bold;
+    color: #576677;
+}
+.dropdown-item:hover{
+    border-radius: 20px;
+    background-color: white !important;
+}
+.dropdown-item:hover{
+    color: #88b0e7 !important;
+}
+.dropdown-menu{
+    transition: 0.1s;
+    box-shadow: 0px 10px 12px 0px #88b0e7;
+    top: 3px !important;
+}
+.nav-item :hover{
+    padding-bottom: 1.4%;
+    box-shadow: inset 0px -4px #88b0e7;
+}
+#dropdownMenuButton1{
+    transition: none;
+    border-radius: 0px;
+    background:none; border: none; box-shadow: none; padding: 8px 10px 0px 0px;
+}
+#dropdownMenuButton1:hover{
+    box-shadow: inset 0px -4px #88b0e7 !important;
 }
