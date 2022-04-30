@@ -12,46 +12,51 @@
 <body>
     <!-- Plantillla a utilizar para todas las páginas-->
     <header class="bootstrapNav">
-        <div class="Navegacion">
-            <div class="logo">
-                <a href="Inicio.html"><img src="Images/Logo.png" alt="Logo Unad"></a>
-            </div>
-            <ul class="nav" >
-                <li class="nav-item">
-                  <a class="nav-link" href="Inicio.html">Inicio</a>
-                </li>
-                <li class="dropdown"  >
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Temas
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="border: none; border-radius: 0px 0px 20px 20px;">
-                        <li><a class="dropdown-item" href="SintaxisYSelect.html">sintaxis y Selectores CSS</a></li>
-                        <li><a class="dropdown-item" href="Interaccion_hor.html" >Interacción Humano Ordenador</a></li>
-                      </ul>
-                </li>
-                <li class="dropdown"  >
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Recursos
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="border: none; border-radius: 0px 0px 20px 20px;">
-                        <li><a class="dropdown-item" href="tutorialSintaxis.html">Vídeo explicativo</a></li>
-                        <li><a class="dropdown-item" href="tutorialSelectores.html" >Ejemplo de aplicación</a></li>
-                      </ul>
-                </li>
-                <li class="dropdown"  >
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="padding: 8px 0px 0px 0px;"  >
-                        Aprendizaje
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="border: none; border-radius: 0px 0px 20px 20px;">
-                        <li><a class="dropdown-item" href="Actividad1.html">Actividad 1</a></li>
-                        <li><a class="dropdown-item" href="Actividad2.html" >Actividad 2</a></li>
-                      </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Acerca.html" >Acerca</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <div><a href="Inicio.html"><img src="Images/Logo.png" alt=""></a></div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a>
                   </li>
-              </ul>
-        </div>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Temas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="SintaxisYSelect.html">Sintaxis y Selectores CSS</a></li>
+                      <li><a class="dropdown-item" href="Interaccion_hor.html">Interaccion Humano Ordenador</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Recursos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="tutorialSintaxis.html">Vídeo explicativo</a></li>
+                      <li><a class="dropdown-item" href="tutorialSelectores.html">Ejemplo de aplicación</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Aprendizaje
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="Actividad1.html">Actividad 1</a></li>
+                      <li><a class="dropdown-item" href="Actividad2.html">Actividad 2</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Acerca.html">Acerca</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <div class="fondo">
     </div> <!--Fondo de la página-->
