@@ -257,8 +257,9 @@ footer{
     margin-top: auto;
     width: 100%;
     background-color: WHITE;
-    
     z-index: 100;
+    box-shadow: inset 0px 1px 0px 0px #88b0e744;
+    padding-top: 20px;
 }
 .footerContenedor{
     display: flex;
@@ -456,6 +457,9 @@ footer{
     box-shadow: inset 0px -4px #88b0e7;
     padding-bottom: 1.4%;
 }
+
+/** ------------------Responsive ---------------------- **/
+
 @media screen and (min-width: 991px) {
     .dropdown-menu{
         top: 38px !important;
@@ -469,5 +473,9 @@ footer{
     .nav-link:hover{
         box-shadow: none;
         padding-bottom: none;
+    }
+    .footerContenedor{
+        flex-direction: column;
+        text-align: center;
     }
   } 
