@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="css/stylebase.css">
+    
 </head>
 <body>
     <!-- Plantillla a utilizar para todas las páginas-->
-    <header class="header-noBootstrap">
+    <header>
         <div class="Navegacion"> <!-- barra de navegación con flex-->
             
             <div class="logo">
@@ -102,9 +103,11 @@
 
 
 
-    <!-- A partir de aquí también pertenece a la plantilla-->
-        <aside id="aside_bar"> <!-- Aside donde se verá la página de la UNAD -->
-            
+        <div class="contenedor_icon_facebook"><a href="#aside_mostrar"><img src="Images/icon_fb.png" alt=""></a></div>
+        <aside id="aside_mostrar"> <!-- Aside donde se verá la página de la UNAD -->
+            <div class="contenedor_cerrar_facebook">
+                <a href="#Cerrar_aside" >X</a>
+            </div>
             <div class="cont_aside" >
                 <h1>UNAD</h1>
                 <iframe id="aside_bar" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
@@ -116,7 +119,6 @@
                 </p>
             </div>
         </aside>
-        <div class="icon_abrir"><img src="Images/icon_abrir.png" alt="Icon desplegar"></div>    
     </main> <!-- Aquí cierra todo lo referente al contenido de la página para dar paso al footer -->
     
     <footer>
