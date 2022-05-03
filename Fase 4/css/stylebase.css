@@ -526,18 +526,25 @@ footer{
         text-align: center;
     }
   } 
-
-.contenedor_iframe iframe{
+.contenedor_iframe{
     width: 300px;
+}
+.contenedor_iframe iframe{
+    width: 100%;
     height: 700px;
 }
-@media screen and (min-width: 616px) {
-    .contenedor_iframe iframe{
+@media screen and (min-width: 500px) {
+    .contenedor_iframe{
+        width: 380px;
+    }
+  } 
+@media screen and (min-width: 630px) {
+    .contenedor_iframe{
         width: 500px;
-    }
-  } 
-@media screen and (min-width: 900px) {
-    .contenedor_iframe iframe{
+    } 
+  }
+@media screen and (min-width: 800px) {
+    .contenedor_iframe{
         width: 600px;
-    }
-  } 
+    } 
+  }
