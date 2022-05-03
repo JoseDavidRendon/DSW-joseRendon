@@ -533,6 +533,12 @@ footer{
     width: 100%;
     height: 700px;
 }
+@media screen and (max-width: 500px) {
+    .container-sm .contenido_principal{
+        padding: 10px;
+        width: 340px;
+    }
+  } 
 @media screen and (min-width: 500px) {
     .contenedor_iframe{
         width: 380px;
