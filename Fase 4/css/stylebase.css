@@ -526,3 +526,18 @@ footer{
         text-align: center;
     }
   } 
+
+.contenedor_iframe iframe{
+    width: 300px;
+    height: 700px;
+}
+@media screen and (min-width: 616px) {
+    .contenedor_iframe iframe{
+        width: 500px;
+    }
+  } 
+@media screen and (min-width: 900px) {
+    .contenedor_iframe iframe{
+        width: 600px;
+    }
+  } 
