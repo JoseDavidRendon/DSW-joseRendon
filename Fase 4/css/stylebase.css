@@ -58,13 +58,14 @@ header{
     display: flex;
     list-style: none;
     padding-top: 10px;
+
 }
 
 .Links a{
     text-decoration: none;
-    
     font-weight: bold;
     color: #576677;
+
 }
 
 #top{
@@ -72,10 +73,11 @@ header{
     padding-right: 10px;
     cursor:context-menu;
     margin-bottom:  8px;
+
 }
 
 #top .slide{
-    top: 39px;
+    top: 10px;
     padding-top: 20px;
     padding-bottom: 10px;
     margin-left:-30px;
@@ -86,6 +88,8 @@ header{
     padding-right: 40px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0px 10px 12px 0px #88b0e7;
+    
+    
 }
 #top .slide li{
     list-style: none;
@@ -111,31 +115,33 @@ header{
 
 #top:hover .slide{
     display: block;
-    top: 39px;
+    top: 36px;
+    animation-name: slide_anim;
+    animation-duration: 0.1s;
 }
+
 
 #top:hover{
     padding-bottom: 1.4%;
     box-shadow: inset 0px -4px #88b0e7;
-    
+
 }
 
 .slide li:hover a{
     color: #88b0e7;
+
 }
 
 @keyframes slide_anim{
     from{
-        top:30px;
+        top: 30px;
         opacity: 0%;
     }
     to{
-        top: 34px;
+        top: 36px;
         opacity: 100%;
     }
 }
-
-
 
 
 /* ___________ FONDO DE LA PÁGINA_________ */
@@ -491,12 +497,15 @@ footer{
 .dropdown-item:hover{
     background-color: white !important;
     color: #88b0e7 !important;
+    
 }
 
 .nav-link:hover{
     box-shadow: inset 0px -4px #88b0e7;
     padding-bottom: 1.4%;
+    
 }
+
 .container-sm{
     padding-top: 80px;
     max-width: 1000px !important;    
@@ -507,11 +516,15 @@ footer{
     align-items: center;
     line-height: 25px;
 }
+
+.dropdown-menu{
+    animation-name: slide_anim;
+    animation-duration: 0.1s;
+}
 /** ------------------Responsive ---------------------- **/
 
 @media screen and (min-width: 991px) {
     .dropdown-menu{
-        top: 38px !important;
         border: none !important;
         box-shadow: 0px 10px 12px 0px #88b0e7 ;
         border-radius: 0px 0px 10px 10px !important;
@@ -521,12 +534,13 @@ footer{
 @media screen and (max-width: 991px) {
     .nav-link:hover{
         box-shadow: none;
-        padding-bottom: none;
+        padding-bottom: 8px;
     }
     .footerContenedor{
         flex-direction: column;
         text-align: center;
     }
+    
   } 
 .contenedor_iframe{
     width: 300px;
