@@ -29,7 +29,7 @@ body{
     }
 }
 
-/* _________BARRA DE NAVEGACIÓN_______ */
+/* _________BARRA DE NAVEGACIÓN (No bootstrap)_______ */
 
 header{
     position: fixed;
@@ -314,9 +314,6 @@ footer{
 
 
 
-/*Aquí van únicamente los estilos de texto y contenido*/
-
-
 /*------------COMPARTIDO ENTRE VARIAS PÁGINAS---------  */
 .titulo{ /*sintaxis y hor*/
     padding-left: 20px;
@@ -457,6 +454,12 @@ footer{
     max-width: 100%;
 }
 
+
+
+
+
+
+
 /*----------------Bootstrap --------------------*/
 .navbar{
     width: 100%;
@@ -492,7 +495,16 @@ footer{
     box-shadow: inset 0px -4px #88b0e7;
     padding-bottom: 1.4%;
 }
-
+.container-sm{
+    padding-top: 80px;
+    max-width: 1000px !important;    
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+}
 /** ------------------Responsive ---------------------- **/
 
 @media screen and (min-width: 991px) {
